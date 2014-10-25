@@ -1,8 +1,6 @@
 library(shiny)
 library(rCharts)
-library(datasets)
-library(ISOcodes)
-data(ISO_3166_1)
+
 shinyUI(pageWithSidebar(
         headerPanel("Body Mass Index(BMI) Calculator"),
         sidebarPanel(
@@ -11,7 +9,7 @@ shinyUI(pageWithSidebar(
                 actionButton("goButton", "submit"),
                 hr(),
                 p(strong(em("Documentation:",a("Body Mass Index(BMI) Calculator",href="READMe.html")))),
-                p(strong(em("Github repository:",a("Developing Data Products - Peer Assessment Project; Shiny App",href="https://github.com/CrazyFarang/DevelopingDataProducts"))))
+                p(strong(em("Github repository:",a("Developing Data Products - Peer Assessment Project; Shiny App",href="https://github.com/jjdblast/Develop-Data-Product"))))
         ),
         mainPanel(
                 tabsetPanel(
