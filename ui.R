@@ -22,7 +22,7 @@ shinyUI(pageWithSidebar(
                                 p("Source: ", a("WHO BMI classification", 
                                     href = "http://apps.who.int/bmi/index.jsp?introPage=intro_3.html"))
                                 ),
-                        tabPanel('Plot: BMI distribution',
+                        tabPanel('Plot:Sample BMI distribution',
                                  h5('BMI histplot'),
                                  showOutput("histPlot","polycharts"),
                                  p("Source: ", a("Statcrunch BODYMEAS", 
